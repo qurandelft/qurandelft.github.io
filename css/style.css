@@ -486,7 +486,7 @@ mark,
 
 .img-fluid {
     max-width: 100%;
-    height: auto !important;
+    height: auto !important;z
 }
 
 .fetr {
@@ -11826,7 +11826,7 @@ h1, h2, h3, h4, h5,
 
 .hero-wrap .slider-text .subheading {
     color: #000;
-    margin-top: 0px;
+    margin-top: 350px;
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
