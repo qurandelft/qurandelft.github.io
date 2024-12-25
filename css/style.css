@@ -4,7 +4,7 @@
  * Copyleft 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-:root {
+ :root {
     --blue: #007bff;
     --indigo: #6610f2;
     --purple: #6f42c1;
@@ -166,7 +166,7 @@ a {
 }
 
 a:hover {
-    color: #10034b;
+    color: #17a2b8;
     text-decoration: underline;
 }
 
@@ -485,8 +485,10 @@ mark,
 }
 
 .img-fluid {
-    max-width: 100%;
-    height: auto !important;z
+    max-width: 80%;
+    height: auto !important;
+    transform: scaleX(-1); /* Flips the element horizontally */
+
 }
 
 .fetr {
@@ -572,6 +574,7 @@ pre code {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 @media (min-width: 576px) {
@@ -2797,38 +2800,38 @@ fieldset:disabled a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #3da4ab;
+    border-color: #3da4ab;
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
+    background-color: #3da4ab;
+    border-color: #3da4ab;
 }
 
 .btn-primary:focus, .btn-primary.focus {
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
-    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(61, 164, 171, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(61, 164, 171, 0.5);
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
     color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #3da4ab;
+    border-color: #3da4ab;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #0062cc;
-    border-color: #005cbf;
+    background-color: #3da4ab;
+    border-color: #3da4ab;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
-    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(61, 164, 171, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(61, 164, 171, 0.5);
 }
 
 .btn-secondary {
@@ -11829,11 +11832,11 @@ h1, h2, h3, h4, h5,
     margin-top: 350px;
     margin-bottom: 10px;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 18px;
     letter-spacing: 0;
     text-transform: uppercase;
     display: inline-block;
-    color: #063976;
+    color: #343a40;
 }
 
 .hero-wrap .slider-text .text {
@@ -11961,26 +11964,26 @@ h1, h2, h3, h4, h5,
 }
 
 .btn.btn-primary {
-    background: #063976;
+    background: #17a2b8;
     border: 1px solid #063976;
     color: #fff;
 }
 
 .btn.btn-primary:hover {
-    border: 1px solid #063976;
+    border: 1px solid #17a2b8;
     background: transparent;
-    color: #063976;
+    color: #17a2b8;
 }
 
 .btn.btn-primary.btn-outline-primary {
-    border: 2px solid #063976;
+    border: 2px solid #17a2b8;
     background: transparent;
-    color: #063976;
+    color: #17a2b8;
 }
 
 .btn.btn-primary.btn-outline-primary:hover {
     border: 2px solid transparent;
-    background: #063976;
+    background: #17a2b8;
     color: #fff;
 }
 
@@ -12276,7 +12279,7 @@ h1, h2, h3, h4, h5,
     width: 80px;
     height: 80px;
     margin: 0 auto;
-    background: #23e8e5;
+    background: #fff;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
@@ -12312,7 +12315,7 @@ h1, h2, h3, h4, h5,
 }
 
 .services:hover {
-    background: #063976;
+    background: #17a2b8;
 }
 
 .services:hover .icon {
@@ -12320,7 +12323,7 @@ h1, h2, h3, h4, h5,
 }
 
 .services:hover .icon span {
-    color: #063976;
+    color: #17a2b8;
 }
 
 .services:hover .media-body h3 {
@@ -12593,6 +12596,11 @@ textarea.form-control {
     font-size: 13px;
     color: #d9d9d9;
 }
+.about-author .descd h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 auto;
+}
 
 .about-author .desc h3 {
     font-size: 20px;
@@ -12633,7 +12641,7 @@ textarea.form-control {
     font-size: 16px;
     padding: 5em 0;
     padding-bottom: 3em;
-    background: #063976;
+    background: #3da4ab;
 }
 
 .ftco-footer .ftco-footer-logo {
@@ -14111,4 +14119,19 @@ textarea.form-control {
         stroke-dasharray: 89, 200;
         stroke-dashoffset: -136px;
     }
+}
+
+
+.banner {
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+    align-items: center;
+    display: block;
 }
